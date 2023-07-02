@@ -1,0 +1,34 @@
+@import "variaveis.scss";
+
+//cor de fundo do footer
+footer{
+    background: $Dark_moderate_cyan;
+
+    //container com as informações do footer
+    .container_footer{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+
+        //card logo do footer
+        .card_logo_footer{ 
+            margin: 40px 0;
+        }
+        //estilo dos links do footer
+        .card_nav_links{
+            margin: 20px 0;
+                a{
+                text-decoration: none;
+                color: $Dark_desaturated_cyan;
+                font: 200 16px Arial;
+                margin-left: 30px;
+                }
+        }
+        //estilo da img da div com class card redes
+        .card_redes img{
+            margin-left: 20px;
+            padding: 30px 0 40px 0;
+        }
+    }
+}

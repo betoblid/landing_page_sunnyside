@@ -1,0 +1,19 @@
+@import "variaveis.scss";
+
+.container_main_aprecent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    background: url("../images/desktop/image-header.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 140%;
+
+    .card_logotico{
+        font-size: 70px;
+        margin-bottom: 200px;
+        color: $White;
+        font-family: 'Barlow', sans-serif;
+    }
+}

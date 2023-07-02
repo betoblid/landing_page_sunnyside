@@ -1,0 +1,44 @@
+
+@import "variaveis.scss";
+
+
+.container_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    background-color: rgb(68, 186, 255);
+    height: 10vh;
+
+    .card_nav_bar_mobile{
+        display: none;
+
+        //futura correção nessa parte sei que dara bugs em algumas telas.
+    }
+
+    .card_nav_header{
+        a{
+            text-decoration: none;
+            color: $White;
+            margin-left: 20px;
+            padding: 10px;
+            
+
+            //efeito de hover nos links.
+            &:hover{
+                background: grayscale($color: $Grayish_blue);
+                border-radius: 10px;
+                
+            }
+            //efeito no ultimo link do nav do header.
+            &.link_contact{
+                background: $White;
+                color: $black;
+                padding: 12px 20px;
+                border-radius: 20px;
+                font: 900 12px Arial;
+                text-transform: uppercase;
+            }
+        }
+    }
+}

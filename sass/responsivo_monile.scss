@@ -1,0 +1,123 @@
+
+
+@media(max-width: 900px){
+
+    
+    //header.....
+
+    .hidden{
+        display: none;
+    }
+    .container_header{
+        
+        .card_nav_bar_mobile{
+            display: inline;
+
+            button{
+                background: none;
+                border: none;
+
+                img{
+                    width: 30px;
+                }
+            }
+        }
+
+        .card_nav_header{
+            position: absolute;
+            top: 80px;
+            left: 50px;
+            background: $White;
+            width: 80%;
+            padding: 30px 10px;
+            
+            a{
+                color: black;
+                display: block;
+                text-align: center;
+                padding: 15px 0;
+
+                &.link_contact{
+                    background: $Yellow;
+                    width: 50%;
+                    margin: 0 auto;
+
+                    
+                }
+            }
+
+           
+        }
+    }    
+
+    //responsivo da primeira sessao do main
+    .container_main_aprecent{
+        background-image: url("../images/mobile/image-header.jpg");
+        background-size: cover;
+
+        .card_logotico{
+            font-size: 40px;
+            text-align: center;
+        }
+    }
+
+    .container_conteudo{
+        flex-direction: column-reverse;
+
+        &.rodar{
+            flex-direction: column;
+        }
+
+        .card_article{
+            article{
+                padding: 30px;
+                text-align: center;
+                margin-bottom: 40px;
+            }
+        }
+        .card_img_article2, .card_img_article1{
+            width: 100%;
+            img{
+             width: 100%;
+            }
+        }
+        
+    }
+
+    .container_conteudo2{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    //fazendo o card client
+    .clients{
+    
+        h2{
+            font: 900 19px 'Barlow', sans-serif;
+            margin-bottom: 20px;
+        }
+    }
+
+    .container_clients{
+        flex-flow: column wrap;
+        margin: 0;
+        
+        .card_client{
+            width: 100%;
+        }
+    }
+
+
+    //colocando uma img do lado da outra de 2 em 2 no lado do destaques
+
+    .container_destaques{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        .card_img{
+            width: calc(100% / 2);
+        }
+    }
+
+}
